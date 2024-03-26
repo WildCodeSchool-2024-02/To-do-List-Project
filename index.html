@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    rel="https://www.flaticon.com/fr/icone-animee-gratuite/carnet-de-notes_12743767?term=notes&page=1&position=3&origin=search"
-    ype="/image" href="">
-  <link rel="stylesheet" href="style.css">
-  <title>To-Do-List</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <img src="/image/logo.svg" alt="">
-      <ul>
-        <li>Git Hub</li>
-      </ul>
-
-    </nav>
-  </header>
-  <main>
-    <div class="box">
-      <div class="action">
-        <h1>TO-DO-LIST</h1>
-        <div class="tache"><input type="text" name="Ajouter une tache" placeholder="ajouter une tache">
-          <button>+</button>
-        </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP TO DO LIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profil">
+        <div id="date"></div>
+        <h1>To-Do-List</h1>
+        <span>Whats' news ?</span>
       </div>
 
-      <div class="list">
-        <ul>
-          <li>Faire du sport
+      <div class="ajouter-tache">
+        <input type="text" id="input" placeholder="Ajoute une tâche" />
+        <i id="boton-enter" class="fas fa-plus-circle"></i>
+      </div>
 
-            <img src="/image/38206.svg" alt=""><span class="material-icons-outlined">
-              
-            </span>
-          </li>
+      <div class="section-tache">
+        <h3>To Do</h3>
+        <ul id="liste">
+          <!-- <li id="element">
+                <i class="far fa-circle co" data="realizer" id="0"></i>
+                <p class="text"> Faire devoir de mathx exemple </p>
+                <i class="fas fa-trash de" data="eliminer" id="0"></i> 
+            </li>
+            <li id="element">
+                <i class="far fa-circle co" data="realizer" id="0"></i>
+                <p class="text"> Laver ces vêtements </p>
+                <i class="fas fa-trash de" data="eliminer" id="0"></i> 
+            </li> -->
         </ul>
+        <div class="section-tache">
+          <h3>Terminé</h3>
+          <ul id="listeTerminer"></ul>
+        </div>
       </div>
     </div>
-  </main>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
