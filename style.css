@@ -1,133 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #fafafb;
+  --purple: #9a67ea;
+  --blue-light: #04d4c3;
+  --blue-dark: #2a73c2;
+  --green: #2c7b90;
 }
 
 body {
-    background-color: black;
+  background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+  height: 100vh;
+  font-family: "Prompt", sans-serif;
 }
 
-header {
-
-    background-color: transparent;
-    width: auto;
-    height: 20vh;
-    color: white;
+.container {
+  max-width: 80%;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    margin: 20px;
+.profil h1 {
+  color: var(--white);
 }
 
-nav img {
-    width: 20px;
+.profil span {
+  color: var(--white);
+  letter-spacing: 1px;
 }
 
-nav ul li {
-    list-style-type: none;
+#date {
+  color: var(--white);
+  padding: 50px 0 5px 0px;
 }
 
-img {
-    width: 50px;
+.ajouter-tache {
+  background-color: var(--white);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 10px;
+  margin: 40px 0;
 }
 
-main {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
+.ajouter-tache input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--white);
+  padding-left: 10px;
+}
+.ajouter-tache input::placeholder {
+  font-size: 1.1rem;
+  color: var(--purple);
 }
 
-.action {
-    text-align: center;
-    background: linear-gradient(#7780F3, #5352EE);
-    gap: 50px;
-    padding: 20px;
-
-    ::placeholder {
-        font-family: "Klee One", cursive;
-    }
-
-    border-radius: 20px;
-
+.ajouter-tache i {
+  font-size: 50px;
+  color: var(--purple);
+}
+.ajouter-tache i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-h1 {
-    font-family: "Klee One", cursive;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+.section-tache h3 {
+  color: var(--white);
+  margin-bottom: 20px;
 }
 
-.tache {
-    gap: 20px;
-    width: auto;
-    margin: 20px;
-
+.section-tache li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+  border-radius: 15px;
+  padding: 10px;
+  color: var(--white);
+  margin: 5px 0;
+}
+.section-tache i {
+  font-size: 25px;
 }
 
-input {
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 20px;
-    border: none;
-
-
-
+.section-tache > ul p {
+  font-size: 1.2rem;
 }
 
-
-.list {
-    margin-top: 20px;
-    width: 400px;
-    height: 200px;
-    background: linear-gradient(#7780F3, #5352EE);
-    border-top-left-radius: 20PX;
-    border-top-right-radius: 20px;
-    border-radius: 20px;
-
-
+.section-tache i:hover {
+  color: var(--blue-light);
+  cursor: pointer;
 }
 
-button {
-    width: 35px;
-    border-radius: 20%;
-    border: none;
-    height: 35px;
-    color: white;
-    background-color: blue;
-    position: relative;
-    right: -10px;
+.line-through {
+  text-decoration: line-through;
+  color: var(--blue-light);
 }
 
-
-
-.list img {
-    width: 50px;
+#listeTerminer .text {
+  color: #888;
 }
 
+#listeTerminer li {
+  background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+}
 
-@media(max-width:498px) {
-    body {
-        margin-bottom: 10px;
-    }
+#listeTerminer i {
+  color: var(--blue-light);
+}
 
-    .action {
-        width: 82%;
-        margin-left: 15px;
-        display: block;
-
-        align-items: center;
-
-    }
-
-
+#listeTerminer i:hover {
+  color: var(--blue-dark);
 }
